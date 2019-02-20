@@ -109,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                 status = 0;
                 corr = 0;
                 wro = 0;
+                countDownTimer.cancel();countDownTimer.cancel();
+                mTimer.setText("Time: 00");
                 String padded = String.format("%02d", corr);
                 tcorrect.setText("Correct: " + padded);
                 padded = String.format("%02d", wro);
